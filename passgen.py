@@ -14,6 +14,6 @@ def generate_password(length):
     password += random.choices(all, k= length - 8)
     random.shuffle(password)
     return ''.join(password)
-password_length = int(input())
+password_length = 12
 password= generate_password(password_length)
 print(password)
